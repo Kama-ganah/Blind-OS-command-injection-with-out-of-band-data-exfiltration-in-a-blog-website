@@ -1,8 +1,8 @@
 # Overview
 
-As a penetration tester, I assessed the input handling and backend command execution logic of a web application’s feedback functionality. During testing, I identified a blind OS command injection vulnerability caused by unsafe construction of shell commands using user-supplied input. By injecting a payload into the email parameter and leveraging out-of-band techniques via Burp Collaborator, I confirmed arbitrary command execution by exfiltrating the output of a whoami command. This project demonstrates how insufficient input validation can lead to full system compromise.
+I assessed the input handling and backend command execution logic of a web application’s feedback functionality. During testing, I identified a blind OS command injection vulnerability caused by unsafe construction of shell commands using user-supplied input. By injecting a payload into the email parameter and leveraging out-of-band techniques via Burp Collaborator, I confirmed arbitrary command execution by exfiltrating the output of a whoami command. This project demonstrates how insufficient input validation can lead to full system compromise.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Identified the email parameter in the feedback form as a potential command injection vector.
 
